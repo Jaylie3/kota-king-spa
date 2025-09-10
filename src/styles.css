@@ -1,0 +1,87 @@
+/* Reset */
+body { 
+  font-family: "Poppins", system-ui, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background: #fdf6ec; 
+  color: #222;
+}
+
+/* Header */
+header { 
+  background: linear-gradient(90deg, #e63946, #f77f00); 
+  color: #fff; 
+  padding: 1rem; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+header h1 { 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  letter-spacing: 1px; 
+}
+
+/* Nav */
+nav button { 
+  margin-left: 0.5rem; 
+  padding: 0.6rem 1rem; 
+  border-radius: 20px; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: bold; 
+  background: #fff; 
+  color: #e63946;
+  transition: all 0.2s;
+}
+
+nav button:hover { 
+  background: #e63946; 
+  color: #fff; 
+}
+
+/* Main */
+main { 
+  padding: 1.5rem; 
+  max-width: 900px; 
+  margin: auto;
+}
+
+/* Menu cards */
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.menu-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.menu-card h3 {
+  margin: 0;
+  color: #e63946;
+}
+
+.menu-card p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Home image */
+#content img {
+  margin-top: 1rem;
+  border-radius: 12px;
+  max-width: 100%;
+}
