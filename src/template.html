@@ -3,17 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kota King</title>
+    <meta name="description" content="Kota King — authentic township fast food. Royal taste, real food." />
+    <title>Kota King 👑</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Kota King</h1>
-      <nav>
-        <button data-tab="home">Home</button>
-        <button data-tab="menu">Menu</button>
-        <button data-tab="about">About</button>
-      </nav>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="logo" data-tab="home" aria-label="Kota King home">
+          <span class="logo-crown" aria-hidden="true">👑</span>
+          <span class="logo-text">Kota King</span>
+        </a>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <button class="nav-btn active" data-tab="home">Home</button>
+          <button class="nav-btn" data-tab="menu">Menu</button>
+          <button class="nav-btn" data-tab="about">About</button>
+        </nav>
+      </div>
     </header>
-    <main id="content"><!-- dynamic content here --></main>
+
+    <main id="content" role="main"><!-- dynamic content --></main>
+
+    <footer class="site-footer">
+      <p>© <span id="footer-year"></span> Kota King &mdash; Township flavours you love 🍟</p>
+    </footer>
+
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
