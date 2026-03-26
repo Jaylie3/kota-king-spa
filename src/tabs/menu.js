@@ -70,7 +70,8 @@ export default function loadMenu() {
 
     const waMsg = encodeURIComponent(`Hi Kota King! I'd like to order: ${item.name} (${item.price})`);
     const orderBtn = document.createElement('a');
-    orderBtn.className = 'btn btn-whatsapp';
+    // btn-shimmer applies the uiverse.io animated shimmer sweep
+    orderBtn.className = 'btn btn-shimmer';
     orderBtn.href = `https://wa.me/${WA_NUMBER}?text=${waMsg}`;
     orderBtn.target = '_blank';
     orderBtn.rel = 'noopener noreferrer';
